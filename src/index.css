@@ -1,13 +1,51 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+* {
+  line-height: 1;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  
+  background-color: #000;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+PHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIi8+PHJlY3QgeD0iOCIgeT0iOCIgd2lkdGg9IjM0IiBoZWlnaHQ9IjM0Ij48YW5pbWF0ZSBpZD0iciIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49IjBzO20uZW5kIiBmcm9tPSJyZWQiIHRvPSIjRkYwIi8+PGFuaW1hdGUgaWQ9InkiIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIGR1cj0iMXMiIGJlZ2luPSJyLmVuZCIgZnJvbT0iI0ZGMCIgdG89IiMwRjAiLz48YW5pbWF0ZSBpZD0iZyIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49InkuZW5kIiBmcm9tPSIjMEYwIiB0bz0iIzBGRiIvPjxhbmltYXRlIGlkPSJjIiBhdHRyaWJ1dGVOYW1lPSJmaWxsIiBkdXI9IjFzIiBiZWdpbj0iZy5lbmQiIGZyb209IiMwRkYiIHRvPSIjMDBGIi8+PGFuaW1hdGUgaWQ9ImIiIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIGR1cj0iMXMiIGJlZ2luPSJjLmVuZCIgZnJvbT0iIzAwRiIgdG89IiNGMEYiLz48YW5pbWF0ZSBpZD0ibSIgYXR0cmlidXRlTmFtZT0iZmlsbCIgZHVyPSIxcyIgYmVnaW49ImIuZW5kIiBmcm9tPSIjRjBGIiB0bz0icmVkIi8+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgMjUgMjUiIHRvPSI5MCAyNSAyNSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3JlY3Q+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMTAiLz48L3N2Zz4=");
+  background-position: center center;
+  font: 20px/1 serif;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 5px #000;
+  border-radius: 0.5em;
+  color: #FFF;
+  margin: 1em auto;
+  padding: 4em;
+  width: 640px;
+  text-align: center;
+}
+
+#main  p {
+  margin-top: 1em;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 20px;
+  
+}
+
+
+button {
+  padding: 1em;
+  margin-top: 2em;
+  font-family: 'Akaya Telivigala', cursive;
+  background:linear-gradient(to right, rgba(255, 174, 0, 0.835), rgba(255,0,0,1));
+  color: #FFF;
+  border: none;
+  outline: none;
 }
