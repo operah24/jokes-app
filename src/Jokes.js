@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function Jokes() {
-  const [joke, setJoke] = useState({});
+  const [joke, setJoke]  = useState({});
   const fetchJokes = async () => {
     try {
-      const url = 'https://icanhazdadjoke.com/';
+      const url = 'https://official-joke-api.appspot.com/random_joke';
       const config = {
         headers: {
           Accept: 'application/json',
@@ -18,16 +18,18 @@ function Jokes() {
       console.log(error);
     }
   };
-  const handleClick = () => fetchJokes();
   useEffect(() => {
+  const timer = setInterval(() => {
     fetchJokes();
-  }, []);
+  }, 20000);
+  return () => clearInterval(timer);
+}, []);
+ 
   return (
     <div>
-      <p>{joke ? joke.joke : ''}</p>
-      <button type="button" onClick={handleClick}>
-        View more...
-      </button>
+      <p>Joke: {joke? joke.setup : ''}</p>
+      <p>punchline: {joke? joke.punchline : ''}</p>
+      
     </div>
   );
 }
